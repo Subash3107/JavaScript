@@ -10,13 +10,13 @@
 // (resolve, reject) => { ... }: Pass a function to the Promise constructor. This function is called the executor function.
 // The executor function takes two arguments: resolve and reject. These are functions that you can call to resolve or reject the Promise.
 
-let p = new Promise((resolve, reject) => { // one callback function and two parameters
-  resolve("resolve will print if we use p.then") // call back function with resolve
-  reject("reject will print if we use .catch") // call back function with reject 
+let p = new Promise((resolve, reject) => { // (resolve, reject) => { } one callback function with two parameters
+    resolve("resolve will print if we use p.then") // call back function with resolve
+    reject("reject will print if we use .catch") // call back function with reject 
 })
-p.then((result)=>{ // p.then will catch resolve
-    console.log(result);   
-}).catch((err)=>{   // if their is no resolve then catch will catch reject block
+p.then((result) => { // p.then will catch resolve
+    console.log(result);
+}).catch((err) => {   // if their is no resolve then catch will catch reject block
     console.log(err);
 }).finally( // regardless of .then or .catch is present or not .finally will run first
     console.log("promise is running")

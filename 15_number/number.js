@@ -1,17 +1,17 @@
 let num1 = 10;
-console.log(typeof num1);
+console.log(typeof num1);   // Output: "number"
 let num2 = 5.6;
-console.log(typeof num2);
+console.log(typeof num2);   // Output: "number"
 
 let num3 = Number(10);
-console.log(typeof num3);
+console.log(typeof num3);   // Output: "number"
 
-let num4 = Number("10"); // Number will convert anything into number
-console.log(typeof num4);
+let num4 = Number("10");    // Number will convert anything into number 
+console.log(typeof num4);   // Output: "number"
 
-let num5 = Number("10abcde");
-console.log(num5); //NaN
-console.log(typeof num5); //number
+let num5 = Number("10abc");
+console.log(num5);          //NaN
+console.log(typeof num5);   //number
 
 // ! prompt
 // when we are taking input from user then we use prompt, the type of the value will be string
@@ -19,6 +19,7 @@ console.log(typeof num5); //number
 let a = Number(prompt("enter one number")); // so we change it to Number
 let b = Number(prompt("enter two number"));
 alert(a + b);
+
 
 // ! Number methods
 // ! 1. parseInt()
@@ -40,11 +41,11 @@ console.log(num8); //true
 // it will check whether the number is finite or not
 let num9 = Number.isFinite(10);
 console.log(num9); //true
+console.log(Number.isFinite("0")); // false  
+console.log(Number.isFinite(null)); // false  
 
 // ! 5. isNaN()
 // it will check whether the number is not a number or not
 let num10 = Number.isNaN(10);
-Number.isFinite("0"); // false  
-Number.isFinite(null); // false  
 console.log(num10); //false
 

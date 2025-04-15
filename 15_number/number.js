@@ -3,14 +3,14 @@ console.log(typeof num1);   // Output: "number"
 let num2 = 5.6;
 console.log(typeof num2);   // Output: "number"
 
-let num3 = Number(10);
+let num3 = Number(10);      // In JavaScript, Number() is a constructor function that converts a string or other value into a number.
 console.log(typeof num3);   // Output: "number"
 
 let num4 = Number("10");    // Number will convert anything into number 
 console.log(typeof num4);   // Output: "number"
 
 let num5 = Number("10abc");
-console.log(num5);          //NaN
+console.log(num5);          //NaN (Not a Number)
 console.log(typeof num5);   //number
 
 // ! prompt
@@ -37,7 +37,7 @@ console.log(num7); //10.5
 let num8 = Number.isInteger(10);
 console.log(num8); //true
 
-// ! 4. isFinite()
+// ! 4. isFinite() 
 // it will check whether the number is finite or not
 let num9 = Number.isFinite(10);
 console.log(num9); //true
